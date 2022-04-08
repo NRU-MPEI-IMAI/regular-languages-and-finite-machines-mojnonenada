@@ -1,0 +1,47 @@
+digraph task3_5_dka {
+    rankdir=LR;
+    node [shape = doublecircle]; q2q3q6q10; q2q4q6q7q9q10; q2q3q5q6q8q10; q2q6q7q10; q2q3q8q10; q2q4q7q10; q2q3q5q8q10; q2q4q7q9q10;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> q1;
+    q1 -> q2 [label="a, b"];
+    q2 -> q2q3 [label="a"];
+    q2 -> q2q7 [label="b"];
+    q2q3 -> q2q3q6 [label="a"];
+    q2q3 -> q2q4q7 [label="b"];
+    q2q7 -> q2q3q8 [label="a"];
+    q2q7 -> q2q6q7 [label="b"];
+    q2q3q6 -> q2q3q6q10 [label="a"];
+    q2q3q6 -> q2q6q7q10 [label="b"];
+    q2q4q7 -> q2q3q5q8 [label="a"];
+    q2q4q7 -> q2q6q7 [label="b"];
+    q2q3q8 -> q2q3q6 [label="a"];
+    q2q3q8 -> q2q4q7q9 [label="b"];
+    q2q6q7 -> q2q3q8q10 [label="a"];
+    q2q6q7 -> q2q6q7q10 [label="b"];
+    q2q3q6q10 -> q2q3q6q10 [label="a"];
+    q2q3q6q10 -> q2q4q7q10 [label="b"];
+    q2q6q7q10 -> q2q3q8q10 [label="a"];
+    q2q6q7q10 -> q2q6q7q10 [label="b"];
+    q2q3q5q8 -> q2q3q6 [label="a"];
+    q2q3q5q8 -> q2q4q6q7q9 [label="b"];
+    q2q4q7q9 -> q2q3q5q6q8 [label="a"];
+    q2q4q7q9 -> q2q6q7 [label="b"];
+    q2q3q8q10 -> q2q3q6q10 [label="a"];
+    q2q3q8q10 -> q2q4q7q9q10 [label="b"];
+    q2q4q7q10 -> q2q3q5q8q10 [label="a"];
+    q2q4q7q10 -> q2q6q7q10 [label="b"];
+    q2q3q5q8q10 -> q2q3q6q10 [label="a"];
+    q2q3q5q8q10 -> q2q4q6q7q9q10 [label="b"];
+    q2q4q6q7q9 -> q2q3q5q6q8q10 [label="a"];
+    q2q4q6q7q9 -> q2q6q7q10 [label="b"];
+
+    q2q3q5q6q8 -> q2q3q6q10 [label="a"];
+    q2q3q5q6q8 -> q2q4q6q7q9q10 [label="b"];
+    q2q4q7q9q10 -> q2q3q5q6q8q10 [label="a"];
+    q2q4q7q9q10 -> q2q6q7q10 [label="b"];
+    q2q4q6q7q9q10 -> q2q3q5q6q8q10 [label="a"];
+    q2q4q6q7q9q10 -> q2q6q7q10 [label="b"];
+    q2q3q5q6q8q10 -> q2q3q6q10 [label="a"];
+    q2q3q5q6q8q10 -> q2q4q6q7q9q10 [label="b"];
+}

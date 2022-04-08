@@ -1,0 +1,42 @@
+digraph task2_5_simple {
+    rankdir=LR;
+    node [shape = doublecircle] 210; 310; 410; 510; 610;  
+    node [shape = circle];
+    "" [shape = none];
+    "" -> 17;
+    17 -> 48 [label = "a"];
+    17 -> 28 [label = "b"];
+    19 -> 410 [label = "a"];
+    19 -> 210 [label = "b"];
+    110 -> 49 [label = "a"];
+    110 -> 29 [label = "b"];
+
+    28 -> 59 [label = "a"];
+    28 -> 39 [label = "b"];
+    29 -> 510 [label = "a"];
+    29 -> 310 [label = "b"];
+    210 -> 59 [label = "a"];
+    210 -> 39 [label = "b"];
+
+    39 -> 610 [label = "a"];
+    39 -> 110 [label = "b"];
+    310 -> 69 [label = "a"];
+    310 -> 19 [label = "b"];
+
+    48 -> 19 [label = "a"];
+    48 -> 59 [label = "b"];
+    49 -> 110 [label = "a"];
+    49 -> 510 [label = "b"];
+    410 -> 19 [label = "a"];
+    410 -> 59 [label = "b"];
+
+    59 -> 210 [label = "a"];
+    59 -> 610 [label = "b"];
+    510 -> 29 [label = "a"];
+    510 -> 69 [label = "b"];
+
+    69 -> 310 [label = "a"];
+    69 -> 410 [label = "b"];
+    610 -> 39 [label = "a"];
+    610 -> 49 [label = "b"];
+}

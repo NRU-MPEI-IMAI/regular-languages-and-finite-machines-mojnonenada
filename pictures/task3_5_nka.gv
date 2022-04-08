@@ -1,0 +1,21 @@
+digraph task3_5_nka {
+    rankdir=LR;
+    node [shape = doublecircle]; q10;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> q1;
+    q1 -> q2 [label="a, b"];
+    q2 -> q2 [label="a, b"];
+    q2 -> q3 [label="a"];
+    q3 -> q4 [label="b"];
+    q4 -> q5 [label="a"];
+    q5 -> q6 [label="b"];
+    q2 -> q7 [label="b"];
+    q7 -> q8 [label="a"];
+    q8 -> q9 [label="b"];
+    q9 -> q6 [label="a"];
+    q3 -> q6 [label="a"];
+    q7 -> q6 [label="b"];
+    q6 -> q10 [label="a, b"];
+    q10 -> q10 [label="a, b"];
+}

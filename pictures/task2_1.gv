@@ -1,0 +1,26 @@
+digraph task2_1 {
+    rankdir=LR;
+    node [shape = doublecircle];  q3q6;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> q1q4;
+    q1q4 -> q2q4 [label = "a"];
+    q1q4 -> q1q5 [label = "b"];
+    q1q5 -> q2q5 [label = "a"];
+    q1q5 -> q1q6 [label = "b"];
+    q1q6 -> q2q6 [label = "a"];
+    q1q6 -> q1q6 [label = "b"];
+
+    q2q4 -> q3q4 [label = "a"];
+    q2q4 -> q2q5 [label = "b"];
+    q2q5 -> q3q5 [label = "a"];
+    q2q5 -> q2q6 [label = "b"];
+    q2q6 -> q3q6 [label = "a"];
+    q2q6 -> q2q6 [label = "b"];
+
+    q3q4 ->  q3q4 [label = "a"];
+    q3q4 ->  q3q5 [label = "b"];
+    q3q5 ->  q3q5 [label = "a"];
+    q3q5 ->  q3q6 [label = "b"];
+    q3q6 ->  q3q6 [label = "a, b"];
+}
