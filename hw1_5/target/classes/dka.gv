@@ -1,0 +1,14 @@
+digraph dka {
+	rankdir=LR;
+	node [shape = doublecircle]; q8;
+	node [shape = circle];
+	"" [shape = none];
+	"" -> q1;
+	q8 -> q5q7 [label = "a"];
+	q5q7 -> q8 [label = "b"];
+	q5 -> q8 [label = "b"];
+	q4 -> q5 [label = "b"];
+	q5 -> q4 [label = "a"];
+	q5q7 -> q4 [label = "a"];
+	q1 -> q8 [label = "a"];
+}
