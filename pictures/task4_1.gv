@@ -1,0 +1,18 @@
+digraph task4_1 {
+    rankdir=LR;
+    node [shape = doublecircle]; q8;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> q1;
+    q1 -> q2 [label="a"];
+    q2 -> q3 [label="a"];
+    q3 -> q4 [label="b"];
+    q4 -> q5 [label="b"];
+    q5 -> q6 [label="a"];
+    q6 -> q7 [label="b"];
+    q7 -> q8 [label="a"];
+    q8 -> q5 [label="lmb"];
+    q5 -> q8 [label="lmb"];
+    q1 -> q4 [label="lmb"];
+    q4 -> q1 [label="lmb"];
+}

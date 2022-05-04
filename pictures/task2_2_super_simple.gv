@@ -1,0 +1,11 @@
+digraph task2_2_super_simple {
+    rankdir=LR;
+    node [shape = doublecircle];  10;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> 7;
+    7 -> 8 [label = "a, b"];
+    8 -> 9 [label = "a, b"];
+    9 -> 10 [label = "a, b"];
+    10 -> 9 [label = "a, b"];
+}

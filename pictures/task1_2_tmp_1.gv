@@ -1,0 +1,12 @@
+digraph task1_2_tmp_1 {
+    rankdir=LR;
+    node [shape = doublecircle];  q6;
+    node [shape = circle];
+    "" [shape = none];
+    "" -> q4;
+    q4 -> q5 [label = "b"];
+    q4 -> q4 [label = "a"];
+    q5 -> q6 [label = "b"];
+    q5 -> q5 [label = "a"];
+    q6 -> q6 [label = "a, b"];
+}
